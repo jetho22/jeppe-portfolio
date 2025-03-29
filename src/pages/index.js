@@ -45,6 +45,7 @@ const TechList = styled.div`
   flex-wrap: wrap;
   gap: 10px;
   margin-top: 10px;
+  margin-bottom: 40px;
 `;
 
 const TechTag = styled.span`
@@ -78,6 +79,7 @@ const ProjectCard = styled(motion.a)`
   display: block;
   cursor: pointer;
   position: relative;
+  min-height: 200px;
 
   &:hover {
     transform: translateY(-5px);
@@ -94,6 +96,7 @@ const ProjectCard = styled(motion.a)`
   p {
     color: var(--text-secondary);
     line-height: 1.6;
+    margin-bottom: 15px;
   }
 
   .arrow-icon {
@@ -116,7 +119,9 @@ const GitHubButton = styled.a`
   font-size: 14px;
   font-family: 'SF Mono', 'Fira Code', monospace;
   text-decoration: none;
-  margin-top: 15px;
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
   opacity: 0.8;
   transition: opacity 0.2s ease;
 
