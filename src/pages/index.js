@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import Layout from '../components/Layout';
 import GlobalStyles from '../styles/GlobalStyles';
+import { FaGithub } from 'react-icons/fa';
+import { Helmet } from 'react-helmet';
 
 const Section = styled.section`
   display: flex;
@@ -171,6 +173,17 @@ const IndexPage = () => {
   return (
     <>
       <GlobalStyles />
+      <Helmet>
+        <title>Jeppe Holgaard Thomsen</title>
+        <meta name="description" content="Portfolio of Jeppe Holgaard Thomsen, a Software Engineer specializing in clean architecture and efficient algorithms." />
+        <meta name="keywords" content="software engineer, developer, portfolio, clean architecture, algorithms" />
+        <meta property="og:title" content="Jeppe Holgaard Thomsen" />
+        <meta property="og:description" content="Portfolio of Jeppe Holgaard Thomsen, a Software Engineer specializing in clean architecture and efficient algorithms." />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Jeppe Holgaard Thomsen" />
+        <meta name="twitter:description" content="Portfolio of Jeppe Holgaard Thomsen, a Software Engineer specializing in clean architecture and efficient algorithms." />
+      </Helmet>
       <Layout 
         sections={sections} 
         activeSection={activeSection} 
@@ -282,7 +295,7 @@ const IndexPage = () => {
             <h2>Projects</h2>
             <ProjectGrid>
               <ProjectCard
-                href="https://github.com/jeppethomsen/jeppe-portfolio"
+                href="www.jeppeholgaard.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.02 }}
