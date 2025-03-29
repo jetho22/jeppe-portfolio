@@ -49,17 +49,41 @@ const Description = styled.p`
 
 const SocialLinks = styled.div`
   display: flex;
-  gap: 25px;
+  flex-direction: column;
+  gap: 15px;
   margin-top: 40px;
 `;
 
-const SocialIcon = styled.a`
+const SocialLink = styled.a`
   color: var(--text-secondary);
   font-size: 22px;
   transition: color 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  position: relative;
 
   &:hover {
     color: var(--primary);
+  }
+
+  span {
+    font-size: 14px;
+    font-family: 'SF Mono', 'Fira Code', monospace;
+  }
+
+  .arrow-icon {
+    opacity: 0;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    color: var(--primary);
+    margin-left: 5px;
+    font-size: 14px;
+  }
+
+  &:hover .arrow-icon {
+    opacity: 1;
+    transform: translateX(4px);
   }
 `;
 
@@ -81,11 +105,10 @@ const Layout = ({ children, sections, activeSection, onSectionClick }) => {
       <LeftSide>
         <div>
           <PersonalInfo>
-            <Name>Jeppe Thomsen</Name>
+            <Name>Jeppe Holgaard Thomsen</Name>
             <Title>Software Engineer</Title>
             <Description>
-              I'm a passionate software developer with a focus on creating elegant and efficient solutions.
-              I love building things that live on the internet and am constantly learning new technologies.
+            I craft elegant software solutions with a focus on clean architecture and efficient algorithms.
             </Description>
           </PersonalInfo>
           <Sidebar 
@@ -95,15 +118,20 @@ const Layout = ({ children, sections, activeSection, onSectionClick }) => {
           />
         </div>
         <SocialLinks>
-          <SocialIcon href="https://github.com/jetho22" target="_blank" rel="noopener noreferrer">
+          <SocialLink href="https://github.com/jetho22" target="_blank" rel="noopener noreferrer">
             <FaGithub />
-          </SocialIcon>
-          <SocialIcon href="https://www.linkedin.com/in/jeppe-holgaard-thomsen1/" target="_blank" rel="noopener noreferrer">
+            <span>GitHub</span>
+            <span className="arrow-icon">→</span>
+          </SocialLink>
+          <SocialLink href="https://www.linkedin.com/in/jeppe-holgaard-thomsen1/" target="_blank" rel="noopener noreferrer">
             <FaLinkedin />
-          </SocialIcon>
-          <SocialIcon href="mailto:holgaardjeppe@gmail.com">
+            <span>LinkedIn</span>
+            <span className="arrow-icon">→</span>
+          </SocialLink>
+          <SocialLink>
             <FaEnvelope />
-          </SocialIcon>
+            <span>holgaardjeppe@gmail.com</span>
+          </SocialLink>
         </SocialLinks>
       </LeftSide>
       <MainContent>

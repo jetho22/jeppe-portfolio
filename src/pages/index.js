@@ -69,11 +69,15 @@ const ProjectGrid = styled.div`
   margin-top: 20px;
 `;
 
-const ProjectCard = styled(motion.div)`
+const ProjectCard = styled(motion.a)`
   background: rgba(255, 255, 255, 0.05);
   padding: 25px;
   border-radius: 4px;
   transition: transform 0.2s ease;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+  position: relative;
 
   &:hover {
     transform: translateY(-5px);
@@ -82,11 +86,47 @@ const ProjectCard = styled(motion.div)`
   h3 {
     color: var(--primary);
     margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
   }
 
   p {
     color: var(--text-secondary);
     line-height: 1.6;
+  }
+
+  .arrow-icon {
+    opacity: 0;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    color: var(--primary);
+  }
+
+  &:hover .arrow-icon {
+    opacity: 1;
+    transform: translateX(4px);
+  }
+`;
+
+const GitHubButton = styled.a`
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--primary);
+  font-size: 14px;
+  font-family: 'SF Mono', 'Fira Code', monospace;
+  text-decoration: none;
+  margin-top: 15px;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  svg {
+    width: 16px;
+    height: 16px;
   }
 `;
 
@@ -139,18 +179,22 @@ const IndexPage = () => {
           >
             <h2>About</h2>
             <p>
-              I'm a passionate software developer with a focus on creating elegant and efficient solutions.
-              I love building things that live on the internet and am constantly learning new technologies
-              to stay at the forefront of web development.
+              I'm a cheerful and hardworking software engineering student at the University of Southern Denmark, 
+              passionate about creating elegant solutions to complex problems. My journey in software development 
+              is driven by a strong work ethic and clear ambitions, allowing me to combine theoretical knowledge 
+              with practical application through real-world projects.
             </p>
             <p>
-              With a strong foundation in both front-end and back-end development, I specialize in creating
-              responsive and user-friendly applications. My approach combines clean code principles with
-              modern design practices to deliver exceptional user experiences.
+              With a strong foundation in both front-end and back-end development, I specialize in creating 
+              responsive and user-friendly applications. My approach combines clean code principles with 
+              modern design practices to deliver exceptional user experiences. I thrive in both team 
+              environments and independent work, constantly seeking opportunities to challenge myself and 
+              improve my skills.
             </p>
             <p>
-              When I'm not coding, I'm exploring new technologies, contributing to open-source projects,
-              and sharing my knowledge through technical writing and mentoring.
+              When I'm not coding, I'm exploring new technologies, at work or at the gym. 
+              I'm particularly interested in software architecture and system design, 
+              and I'm always excited to learn new technologies that can help me build better solutions.
             </p>
           </motion.div>
         </Section>
@@ -164,61 +208,60 @@ const IndexPage = () => {
             <h2>Experience</h2>
             <Grid>
               <DateRange>
-                <h3>Jan 2023 - Present</h3>
-                <p>Senior Software Developer</p>
+                <h3>Feb 2025 - Present</h3>
+                <p>Software Engineer Intern</p>
               </DateRange>
               <ExperienceItem>
-                <h3>Tech Company A</h3>
+                <h3>ABB</h3>
                 <p>
-                  Lead developer for a team of 5, responsible for architecting and implementing
-                  new features for the company's flagship product. Improved application performance
-                  by 40% through optimization techniques.
+                  Working on real-world customer projects using C# .NET and SQL Server. Developing and maintaining 
+                  enterprise-level applications, focusing on backend development and database management. Collaborating 
+                  with experienced developers to deliver high-quality solutions for industrial automation systems.
                 </p>
                 <TechList>
-                  <TechTag>React</TechTag>
-                  <TechTag>TypeScript</TechTag>
-                  <TechTag>Node.js</TechTag>
-                  <TechTag>MongoDB</TechTag>
+                  <TechTag>C#</TechTag>
+                  <TechTag>.NET</TechTag>
+                  <TechTag>SQL Server</TechTag>
+                  <TechTag>Windows</TechTag>
+                  <TechTag>Industrial Automation</TechTag>
                 </TechList>
               </ExperienceItem>
             </Grid>
 
             <Grid>
               <DateRange>
-                <h3>Mar 2021 - Dec 2022</h3>
-                <p>Software Developer</p>
+                <h3>Jun 2024 - Jan 2025</h3>
+                <p>Student Worker</p>
               </DateRange>
               <ExperienceItem>
-                <h3>Tech Company B</h3>
+                <h3>Unicontrol</h3>
                 <p>
-                  Developed and maintained multiple client-facing applications. Implemented
-                  new features and improved existing functionality based on user feedback.
+                  Handling warranty cases by testing returned hardware from customers to identify and document issues. 
+                  Developing scripts using Groovy in Jira Scriptrunner to automate and improve work processes. 
+                  Currently working on a new, improved and automated warranty process.
                 </p>
                 <TechList>
-                  <TechTag>JavaScript</TechTag>
-                  <TechTag>Python</TechTag>
-                  <TechTag>Django</TechTag>
-                  <TechTag>PostgreSQL</TechTag>
+                  <TechTag>Groovy</TechTag>
+                  <TechTag>Jira</TechTag>
+                  <TechTag>Scriptrunner</TechTag>
+                  <TechTag>Hardware Testing</TechTag>
                 </TechList>
               </ExperienceItem>
             </Grid>
 
             <Grid>
               <DateRange>
-                <h3>Jun 2019 - Feb 2021</h3>
-                <p>Junior Developer</p>
+                <h3>Sep 2017 - June 2022</h3>
+                <p>Guest Experience Leader</p>
               </DateRange>
               <ExperienceItem>
-                <h3>Tech Company C</h3>
+                <h3>McDonald's</h3>
                 <p>
-                  Started my professional journey working on web applications and learning
-                  best practices in software development.
+                  Led customer service operations and developed strong 
+                  communication and leadership skills while ensuring high customer satisfaction.
                 </p>
                 <TechList>
-                  <TechTag>HTML</TechTag>
-                  <TechTag>CSS</TechTag>
-                  <TechTag>JavaScript</TechTag>
-                  <TechTag>PHP</TechTag>
+                  <TechTag>Customer Service</TechTag>
                 </TechList>
               </ExperienceItem>
             </Grid>
@@ -234,55 +277,104 @@ const IndexPage = () => {
             <h2>Projects</h2>
             <ProjectGrid>
               <ProjectCard
+                href="https://github.com/jeppethomsen/jeppe-portfolio"
+                target="_blank"
+                rel="noopener noreferrer"
                 whileHover={{ scale: 1.02 }}
                 transition={{ duration: 0.2 }}
               >
-                <h3>E-commerce Platform</h3>
+                <h3>
+                  Personal Portfolio Website
+                  <svg className="arrow-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                    <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+                  </svg>
+                </h3>
                 <p>
-                  Built a full-featured e-commerce platform with React and Node.js.
-                  Implemented user authentication, product management, shopping cart,
-                  and payment integration.
+                  A modern, responsive portfolio website built with React and Gatsby. Features smooth scrolling navigation, dynamic section highlighting, and elegant animations.
                 </p>
                 <TechList>
                   <TechTag>React</TechTag>
+                  <TechTag>Gatsby</TechTag>
+                  <TechTag>Styled Components</TechTag>
+                  <TechTag>Framer Motion</TechTag>
+                </TechList>
+                <GitHubButton href="https://github.com/jetho22/jeppe-portfolio" target="_blank" rel="noopener noreferrer">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                  </svg>
+                  View on GitHub
+                </GitHubButton>
+              </ProjectCard>
+              <ProjectCard
+                as="div"
+                whileHover={{ scale: 1.02 }}
+                transition={{ duration: 0.2 }}
+              >
+                <h3>Stock & Crypto Visualization</h3>
+                <p>
+                  A full-stack web application that collects and visualizes stock and cryptocurrency data over time. 
+                  Features a Spring Boot backend with MySQL database and a React frontend for data visualization.
+                </p>
+                <TechList>
+                  <TechTag>Java</TechTag>
+                  <TechTag>Spring Boot</TechTag>
+                  <TechTag>React</TechTag>
+                  <TechTag>MySQL</TechTag>
+                  <TechTag>Docker</TechTag>
+                </TechList>
+                <GitHubButton href="https://github.com/jetho22/SCPS-portfolio" target="_blank" rel="noopener noreferrer">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                  </svg>
+                  View on GitHub
+                </GitHubButton>
+              </ProjectCard>
+              <ProjectCard
+                as="div"
+                whileHover={{ scale: 1.02 }}
+                transition={{ duration: 0.2 }}
+              >
+                <h3>Native Wheels</h3>
+                <p>
+                  A mobile application where users can find and loan cars. 
+                  Built with React Native for cross-platform compatibility and features a Node.js backend 
+                  for data management.
+                </p>
+                <TechList>
+                  <TechTag>React Native</TechTag>
+                  <TechTag>TypeScript</TechTag>
                   <TechTag>Node.js</TechTag>
-                  <TechTag>MongoDB</TechTag>
-                  <TechTag>Stripe</TechTag>
+                  <TechTag>Expo</TechTag>
                 </TechList>
+                <GitHubButton href="https://github.com/Olsedyr/MobileDevelopment" target="_blank" rel="noopener noreferrer">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                  </svg>
+                  View on GitHub
+                </GitHubButton>
               </ProjectCard>
               <ProjectCard
+                as="div"
                 whileHover={{ scale: 1.02 }}
                 transition={{ duration: 0.2 }}
               >
-                <h3>Task Management App</h3>
+                <h3>AsteroidsFX</h3>
                 <p>
-                  Created a collaborative task management application with real-time
-                  updates. Features include task assignment, progress tracking, and
-                  team collaboration tools.
+                  A JavaFX implementation of the classic Asteroids arcade game. Features smooth controls, 
+                  collision detection, and dynamic asteroid generation. Built with object-oriented principles 
+                  and clean architecture.
                 </p>
                 <TechList>
-                  <TechTag>Vue.js</TechTag>
-                  <TechTag>Firebase</TechTag>
-                  <TechTag>Tailwind CSS</TechTag>
-                  <TechTag>WebSocket</TechTag>
+                  <TechTag>Java</TechTag>
+                  <TechTag>JavaFX</TechTag>
+                  <TechTag>Component-based Design</TechTag>
                 </TechList>
-              </ProjectCard>
-              <ProjectCard
-                whileHover={{ scale: 1.02 }}
-                transition={{ duration: 0.2 }}
-              >
-                <h3>Weather Dashboard</h3>
-                <p>
-                  Developed a weather dashboard that displays current weather and
-                  forecasts using multiple weather APIs. Includes interactive maps
-                  and detailed weather information.
-                </p>
-                <TechList>
-                  <TechTag>React</TechTag>
-                  <TechTag>OpenWeather API</TechTag>
-                  <TechTag>Chart.js</TechTag>
-                  <TechTag>Mapbox</TechTag>
-                </TechList>
+                <GitHubButton href="https://github.com/jetho22/AsteroidsFX" target="_blank" rel="noopener noreferrer">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                  </svg>
+                  View on GitHub
+                </GitHubButton>
               </ProjectCard>
             </ProjectGrid>
           </motion.div>
@@ -325,4 +417,10 @@ const IndexPage = () => {
 
 export default IndexPage;
 
-export const Head = () => <title>Home Page</title>
+export const Head = () => (
+  <>
+    <title>Jeppe Thomsen</title>
+    <link rel="icon" type="image/svg+xml" href="static/favicon.svg" />
+    <meta name="theme-color" content="#0A192F" />
+  </>
+);
