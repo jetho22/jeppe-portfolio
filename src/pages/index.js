@@ -306,7 +306,7 @@ const IndexPage = () => {
             <h2>Projects</h2>
             <ProjectGrid>
               <ProjectCard
-                href="www.jeppeholgaard.com"
+                href="https://jeppeholgaard.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.02 }}
