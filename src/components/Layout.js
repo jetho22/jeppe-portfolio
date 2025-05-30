@@ -15,15 +15,20 @@ const Container = styled.div`
   margin: 0 auto;
   display: flex;
   min-height: 100vh;
+  position: relative;
+  padding-left: 400px;
 
   @media (max-width: 768px) {
     flex-direction: column;
+    padding-left: 0;
   }
 `;
 
 
 const LeftSide = styled.div`
-  position: static;
+  position: fixed;
+  top: 0;
+  left: calc(50% - 600px);
   width: 400px;
   height: 100vh;
   padding: 60px 40px;
@@ -32,6 +37,14 @@ const LeftSide = styled.div`
   justify-content: space-between;
   background-color: var(--background);
   border-right: 1px solid rgba(255, 255, 255, 0.1);
+
+  @media (max-width: 768px) {
+    position: static;
+    wdith: 100%;
+    height: auto;
+    border-right: none;
+    padding: 40px 20px;
+  }
 `;
 
 const PersonalInfo = styled.div`
@@ -99,11 +112,12 @@ const SocialLink = styled.a`
 `;
 
 const MainContent = styled.div`
+  position: relative;
   flex: 1;
   margin-left: 35vw;
   padding: 60px 40px;
   margin-left: 50px;
-  max-width: calc(100% - 300px);
+  max-width: calc(100% - 100px);
 
   @media (max-width: 768px) {
     margin-left: 0;

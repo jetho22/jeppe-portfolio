@@ -211,7 +211,7 @@ const IndexPage = () => {
             </p>
             <p>
               When I'm not coding, I'm exploring new technologies, at work or at the gym. 
-              I'm particularly interested in software architecture and system design, 
+              I'm particularly interested in CI/CD, software architecture and system design, 
               and I'm always excited to learn new technologies that can help me build better solutions.
             </p>
           </motion.div>
@@ -256,7 +256,7 @@ const IndexPage = () => {
                 <p>
                   Handling warranty cases by testing returned hardware from customers to identify and document issues. 
                   Developing scripts using Groovy in Jira Scriptrunner to automate and improve work processes. 
-                  Currently working on a new, improved and automated warranty process.
+                  Worked on creating a new, improved and automated warranty process.
                 </p>
                 <TechList>
                   <TechTag>Groovy</TechTag>
