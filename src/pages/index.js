@@ -11,6 +11,10 @@ const Section = styled.section`
   align-items: flex-start;
   padding-top: 5px;
   margin-bottom: 5px;
+
+    @media (max-width: 768px) {
+      margin-bottom: -20%;
+  }
 `;
 
 const Grid = styled.div`
@@ -25,7 +29,7 @@ const Grid = styled.div`
 `;
 
 const ExperienceItem = styled.div`
-  margin-bottom: 25px;
+  margin-bottom: 5px;
 `;
 
 const DateRange = styled.div`
@@ -38,6 +42,10 @@ const DateRange = styled.div`
   p {
     color: var(--text-secondary);
     font-size: 0.9rem;
+  }
+  
+      @media (max-width: 768px) {
+      margin-bottom: -20%;
   }
 `;
 
@@ -109,6 +117,10 @@ const ProjectCard = styled(motion.a)`
   &:hover .arrow-icon {
     opacity: 1;
     transform: translateX(4px);
+  }
+  
+    @media (max-width: 768px) {
+      margin-right: 10%;
   }
 `;
 

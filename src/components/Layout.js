@@ -15,7 +15,6 @@ const Container = styled.div`
   @media (max-width: 1024px) {
     flex-direction: column;
     padding-left: 0;
-    margin-left: 5%;
   }
 `;
 
@@ -43,6 +42,16 @@ const LeftSide = styled.div`
     padding: 40px 20px;
     margin-left: 2%;
   }
+  
+  @media (max-width: 768px) {
+    position: static;
+    width: 100%;
+    height: auto;
+    border-right: none;
+    padding: 40px 20px;
+    margin-left: 5%;
+    margin-bottom: -10%;
+  }
 `;
 
 
@@ -54,6 +63,7 @@ const Name = styled.h1`
   font-size: 3rem;
   margin-bottom: 15px;
   color: var(--text-primary);
+  margin-right: 5%;
 `;
 
 const Title = styled.h2`
@@ -116,7 +126,7 @@ const MainContent = styled.div`
   margin-left: 35vw;
   padding: 60px 40px;
   margin-left: 50px;
-  max-width: calc(100% - 100px);
+  max-width: 100%;
 
   @media (max-width: 1024px) {
     margin-left: 0;
