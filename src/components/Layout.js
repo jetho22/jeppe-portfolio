@@ -1,13 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { motion } from 'framer-motion';
 import Sidebar from './Sidebar';
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
-
-const LayoutWrapper = styled.div`
-  display: flex;
-  min-height: 100vh;
-`;
 
 const Container = styled.div`
   max-width: 1200px;
@@ -18,7 +12,7 @@ const Container = styled.div`
   position: relative;
   padding-left: 400px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     flex-direction: column;
     padding-left: 0;
     margin-left: 5%;
@@ -41,12 +35,13 @@ const LeftSide = styled.div`
   background-color: var(--background);
   border-right: 1px solid rgba(255, 255, 255, 0.1);
 
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     position: static;
     width: 100%;
     height: auto;
     border-right: none;
     padding: 40px 20px;
+    margin-left: 2%;
   }
 `;
 
@@ -123,7 +118,7 @@ const MainContent = styled.div`
   margin-left: 50px;
   max-width: calc(100% - 100px);
 
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     margin-left: 0;
   }
 `;

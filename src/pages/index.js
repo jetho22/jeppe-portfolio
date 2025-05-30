@@ -4,7 +4,6 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import Layout from '../components/Layout';
 import GlobalStyles from '../styles/GlobalStyles';
-import { FaGithub } from 'react-icons/fa';
 import { Helmet } from 'react-helmet';
 
 const Section = styled.section`
