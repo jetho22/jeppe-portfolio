@@ -12,8 +12,8 @@ const Section = styled.section`
   padding-top: 5px;
   margin-bottom: 5px;
 
-    @media (max-width: 768px) {
-      margin-bottom: -20%;
+  @media (max-width: 768px) {
+    margin-bottom: -15%;
   }
 `;
 
@@ -43,9 +43,9 @@ const DateRange = styled.div`
     color: var(--text-secondary);
     font-size: 0.9rem;
   }
-  
-      @media (max-width: 768px) {
-      margin-bottom: -20%;
+    
+  @media (max-width: 768px) {
+    margin-bottom: -20%;
   }
 `;
 
@@ -77,6 +77,7 @@ const ProjectGrid = styled.div`
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   gap: 20px;
   margin-top: 20px;
+  margin-bottom: 5px;
 `;
 
 const ProjectCard = styled(motion.a)`
