@@ -29,7 +29,9 @@ const Container = styled.div`
 const LeftSide = styled.div`
   position: fixed;
   top: 0;
-  left: calc(50% - 600px);
+
+  left: max(0px, calc(50% - 600px)); /* 1200px / 2 = 600px */
+
   width: 400px;
   height: 100vh;
   padding: 60px 40px;
@@ -47,6 +49,7 @@ const LeftSide = styled.div`
     padding: 40px 20px;
   }
 `;
+
 
 const PersonalInfo = styled.div`
   margin-bottom: 40px;
