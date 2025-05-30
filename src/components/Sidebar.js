@@ -24,8 +24,8 @@ const NavItem = styled(motion.div)`
 
 const ActiveIndicator = styled(motion.div)`
   position: absolute;
-  left: -20px;
-  top: 50%;
+  left: -10px;
+  top: 30%;
   transform: translateY(-50%);
   width: 2px;
   height: 16px;

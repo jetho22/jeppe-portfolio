@@ -40,7 +40,7 @@ const LeftSide = styled.div`
 
   @media (max-width: 768px) {
     position: static;
-    wdith: 100%;
+    width: 100%;
     height: auto;
     border-right: none;
     padding: 40px 20px;
