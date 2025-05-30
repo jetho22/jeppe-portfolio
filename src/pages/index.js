@@ -157,10 +157,23 @@ const sections = [
 
 const IndexPage = () => {
   const [activeSection, setActiveSection] = useState('about');
-  const [aboutRef, aboutInView] = useInView({ threshold: 0.5 });
-  const [experienceRef, experienceInView] = useInView({ threshold: 0.5 });
-  const [projectsRef, projectsInView] = useInView({ threshold: 0.5 });
-  const [educationRef, educationInView] = useInView({ threshold: 0.5 });
+  const [aboutRef, aboutInView] = useInView({
+    threshold: 0,
+    rootMargin: '-20% 0px -60% 0px',
+  });
+  const [experienceRef, experienceInView] = useInView({
+    threshold: 0,
+    rootMargin: '-20% 0px -70% 0px',
+  });
+  const [projectsRef, projectsInView] = useInView({
+    threshold: 0,
+    rootMargin: '-20% 0px -60% 0px',
+  });
+  const [educationRef, educationInView] = useInView({
+    threshold: 0,
+    rootMargin: '-20% 0px -20% 0px',
+  });
+  
 
   useEffect(() => {
     if (aboutInView) setActiveSection('about');
