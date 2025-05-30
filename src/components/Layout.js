@@ -9,11 +9,22 @@ const LayoutWrapper = styled.div`
   min-height: 100vh;
 `;
 
+const Container = styled.div`
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  min-height: 100vh;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+`;
+
+
 const LeftSide = styled.div`
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 35vw;
+  position: static;
+  width: 400px;
   height: 100vh;
   padding: 60px 40px;
   display: flex;
@@ -91,8 +102,8 @@ const MainContent = styled.div`
   flex: 1;
   margin-left: 35vw;
   padding: 60px 40px;
-  max-width: 1200px;
-  margin: 0 auto 0 35vw;
+  margin-left: 50px;
+  max-width: calc(100% - 300px);
 
   @media (max-width: 768px) {
     margin-left: 0;
@@ -101,7 +112,7 @@ const MainContent = styled.div`
 
 const Layout = ({ children, sections, activeSection, onSectionClick }) => {
   return (
-    <LayoutWrapper>
+    <Container>
       <LeftSide>
         <div>
           <PersonalInfo>
@@ -137,7 +148,7 @@ const Layout = ({ children, sections, activeSection, onSectionClick }) => {
       <MainContent>
         {children}
       </MainContent>
-    </LayoutWrapper>
+    </Container>
   );
 };
 
