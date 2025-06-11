@@ -1,49 +1,67 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby Minimal Starter
-</h1>
+# 🧑‍💻 Jeppe Holgaard Thomsen — Portfolio Website
 
-## 🚀 Quick start
+Welcome to my personal portfolio website, built to showcase my projects, skills, and experience as a software engineer.  
+You can visit the live site here: [jeppeholgaard.com](https://jeppeholgaard.com/)
 
-1.  **Create a Gatsby site.**
+---
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+## ✨ About the Project
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
+This is a minimal, fast, and modern portfolio site designed to present my work, background, and contact details.  
+The site is fully responsive, animated, and optimized for performance.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework:** [GatsbyJS](https://www.gatsbyjs.com/) (React-based static site generator)
+- **Frontend Library:** [React](https://reactjs.org/)
+- **Styling:** [Styled Components](https://styled-components.com/)
+- **Animations:** [Framer Motion](https://www.framer.com/motion/)
+- **SEO:** [React Helmet](https://github.com/nfl/react-helmet)
+- **Intersection Detection:** [react-intersection-observer](https://github.com/thebuilder/react-intersection-observer)
+- **Deployment:** [Netlify](https://www.netlify.com/)
+
+---
+
+## 🚀 Getting Started
+
+1. **Clone the Repository**
+    ```bash
+    git clone https://github.com/jetho22/jeppe-portfolio.git
+    cd jeppe-portfolio
     ```
 
-2.  **Start developing.**
+2. **Install Dependencies**
+    ```bash
+    npm install
+    ```
 
-    Navigate into your new site’s directory and start it up.
-
-    ```shell
-    cd my-gatsby-site/
+3. **Run the Development Server**
+    ```bash
     npm run develop
     ```
 
-3.  **Open the code and start customizing!**
+4. **View Locally**
+    Open your browser and go to [http://localhost:8000](http://localhost:8000)
 
-    Your site is now running at http://localhost:8000!
+---
 
-    Edit `src/pages/index.js` to see your site update in real-time!
+## 📦 Deployment
 
-4.  **Learn more**
+This site is continuously deployed and hosted on [Netlify](https://www.netlify.com/), and is always available at [jeppeholgaard.com](https://jeppeholgaard.com/).
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Tutorials](https://www.gatsbyjs.com/docs/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Guides](https://www.gatsbyjs.com/docs/how-to/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+---
 
-## 🚀 Quick start (Netlify)
+## 👤 Author
 
-Deploy this starter with one click on [Netlify](https://app.netlify.com/signup):
+**Jeppe Holgaard Thomsen**  
+🌐 [jeppeholgaard.com](https://www.jeppeholgaard.com)  
+🐙 [GitHub](https://github.com/jetho22)  
+💼 [LinkedIn](https://www.linkedin.com/in/jeppe-holgaard-thomsen1/)
 
-[<img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-minimal)
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
