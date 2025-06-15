@@ -1,4 +1,4 @@
-# 🧑‍💻 Jeppe Holgaard Thomsen — Portfolio Website
+# 🧑‍💻 Jeppe Thomsen — Portfolio Website
 
 Welcome to my personal portfolio website, built to showcase my projects, skills, and experience as a software engineer.  
 You can visit the live site here: [jeppeholgaard.com](https://jeppeholgaard.com/)
