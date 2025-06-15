@@ -139,7 +139,7 @@ const Layout = ({ children, sections, activeSection, onSectionClick }) => {
       <LeftSide>
         <div>
           <PersonalInfo>
-            <Name>Jeppe Holgaard Thomsen</Name>
+            <Name>Jeppe Thomsen</Name>
             <Title>Software Engineer</Title>
             <Description>
             I craft elegant software solutions with a focus on clean architecture and efficient algorithms.
@@ -157,7 +157,7 @@ const Layout = ({ children, sections, activeSection, onSectionClick }) => {
             <span>GitHub</span>
             <span className="arrow-icon">→</span>
           </SocialLink>
-          <SocialLink href="https://www.linkedin.com/in/jeppe-holgaard-thomsen1/" target="_blank" rel="noopener noreferrer">
+          <SocialLink href="https://www.linkedin.com/in/jeppe-thomsen1/" target="_blank" rel="noopener noreferrer">
             <FaLinkedin />
             <span>LinkedIn</span>
             <span className="arrow-icon">→</span>
