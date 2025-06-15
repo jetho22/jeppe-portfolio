@@ -199,15 +199,8 @@ const IndexPage = () => {
     <>
       <GlobalStyles />
       <Helmet>
-        <title>Jeppe Holgaard Thomsen</title>
-        <meta name="description" content="Portfolio of Jeppe Holgaard Thomsen, a Software Engineer specializing in clean architecture and efficient algorithms." />
+        <title>Jeppe Thomsen</title>
         <meta name="keywords" content="software engineer, developer, portfolio, clean architecture, algorithms" />
-        <meta property="og:title" content="Jeppe Holgaard Thomsen" />
-        <meta property="og:description" content="Portfolio of Jeppe Holgaard Thomsen, a Software Engineer specializing in clean architecture and efficient algorithms." />
-        <meta property="og:type" content="website" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Jeppe Holgaard Thomsen" />
-        <meta name="twitter:description" content="Portfolio of Jeppe Holgaard Thomsen, a Software Engineer specializing in clean architecture and efficient algorithms." />
       </Helmet>
       <Layout 
         sections={sections} 
