@@ -58,7 +58,7 @@ This site is continuously deployed and hosted on [Netlify](https://www.netlify.c
 **Jeppe Thomsen**  
 🌐 [jeppeholgaard.com](https://www.jeppeholgaard.com)  
 🐙 [GitHub](https://github.com/jetho22)  
-💼 [LinkedIn](https://www.linkedin.com/in/jeppe-thomsen1/)
+💼 [LinkedIn](https://www.linkedin.com/in/jeppe-holgaard-thomsen1/)
 
 ---
 
