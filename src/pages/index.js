@@ -244,7 +244,28 @@ const IndexPage = () => {
             <h2>Experience</h2>
             <Grid>
               <DateRange>
-                <h3>Feb 2025 - Present</h3>
+                <h3>Jun 2024 - Present</h3>
+                <p>Student Worker & Developer</p>
+              </DateRange>
+              <ExperienceItem>
+                <h3>Unicontrol</h3>
+                <p>
+                  Handling warranty cases by testing returned hardware from customers to identify and document issues. 
+                  Developing scripts using Groovy in Jira Scriptrunner to automate and improve work processes. 
+                  Worked on creating a new, improved and automated warranty process.
+                </p>
+                <TechList>
+                  <TechTag>Groovy</TechTag>
+                  <TechTag>Jira</TechTag>
+                  <TechTag>Scriptrunner</TechTag>
+                  <TechTag>Hardware Testing</TechTag>
+                </TechList>
+              </ExperienceItem>
+            </Grid>
+            
+            <Grid>
+              <DateRange>
+                <h3>Feb 2025 - July 2025</h3>
                 <p>Software Engineer Intern</p>
               </DateRange>
               <ExperienceItem>
@@ -260,27 +281,6 @@ const IndexPage = () => {
                   <TechTag>SQL Server</TechTag>
                   <TechTag>Windows</TechTag>
                   <TechTag>Industrial Automation</TechTag>
-                </TechList>
-              </ExperienceItem>
-            </Grid>
-
-            <Grid>
-              <DateRange>
-                <h3>Jun 2024 - Jan 2025</h3>
-                <p>Student Worker</p>
-              </DateRange>
-              <ExperienceItem>
-                <h3>Unicontrol</h3>
-                <p>
-                  Handling warranty cases by testing returned hardware from customers to identify and document issues. 
-                  Developing scripts using Groovy in Jira Scriptrunner to automate and improve work processes. 
-                  Worked on creating a new, improved and automated warranty process.
-                </p>
-                <TechList>
-                  <TechTag>Groovy</TechTag>
-                  <TechTag>Jira</TechTag>
-                  <TechTag>Scriptrunner</TechTag>
-                  <TechTag>Hardware Testing</TechTag>
                 </TechList>
               </ExperienceItem>
             </Grid>

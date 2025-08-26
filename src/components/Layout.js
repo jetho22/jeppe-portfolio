@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Sidebar from './Sidebar';
-import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 
 const Container = styled.div`
   max-width: 1200px;
@@ -51,6 +51,24 @@ const LeftSide = styled.div`
     padding: 40px 20px;
     margin-left: 5%;
     margin-bottom: -10%;
+  }
+`;
+
+const Location = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  color: var(--text-secondary);
+  font-size: 16px;
+
+  svg {
+    color: var(--primary);
+    font-size: 20px;
+  }
+
+  span {
+    font-family: 'SF Mono', 'Fira Code', monospace;
   }
 `;
 
@@ -157,7 +175,7 @@ const Layout = ({ children, sections, activeSection, onSectionClick }) => {
             <span>GitHub</span>
             <span className="arrow-icon">→</span>
           </SocialLink>
-          <SocialLink href="https://www.linkedin.com/in/jeppe-holga-thomsen1/" target="_blank" rel="noopener noreferrer">
+          <SocialLink href="https://www.linkedin.com/in/jeppe-thomsen1/" target="_blank" rel="noopener noreferrer">
             <FaLinkedin />
             <span>LinkedIn</span>
             <span className="arrow-icon">→</span>
@@ -167,6 +185,10 @@ const Layout = ({ children, sections, activeSection, onSectionClick }) => {
             <span>holgaardjeppe@gmail.com</span>
           </SocialLink>
         </SocialLinks>
+        <Location>
+          <FaMapMarkerAlt />
+            <span>Odense, Denmark</span>
+        </Location>
       </LeftSide>
       <MainContent>
         {children}
