@@ -425,7 +425,7 @@ const IndexPage = () => {
             <h2>Education</h2>
             <Grid>
               <DateRange>
-                <h3>Sep 2022 - Present</h3>
+                <h3>Sep 2022 - Jan 2026</h3>
                 <p>Bachelor of Engineering</p>
               </DateRange>
               <ExperienceItem>
