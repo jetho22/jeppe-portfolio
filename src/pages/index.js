@@ -151,7 +151,7 @@ const GitHubButton = styled.a`
 
 const sections = [
   { id: 'about', title: 'About' },
-  { id: 'experience', title: 'Experience' },
+  { id: 'experience', title: 'Career' },
   { id: 'projects', title: 'Projects' },
   { id: 'education', title: 'Education' },
 ];
@@ -241,39 +241,61 @@ const IndexPage = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <h2>Experience</h2>
+            <h2>Career</h2>
             <Grid>
               <DateRange>
-                <h3>Jun 2024 - Present</h3>
-                <p>Student Worker & Developer</p>
+                <h3>Oct 2025 - Present</h3>
+                <p>Student Developer</p>
               </DateRange>
               <ExperienceItem>
-                <h3>Unicontrol</h3>
+                <h3>ABB, Middelfart</h3>
                 <p>
-                  Handling warranty cases by testing returned hardware from customers to identify and document issues. 
-                  Developing scripts using Groovy in Jira Scriptrunner to automate and improve work processes. 
-                  Worked on creating a new, improved and automated warranty process.
+                Contributing to industrial customer projects by building new features, improving existing functionality, and resolving software issues. 
+                Supporting developers with tasks that enhance performance, stability, and workflow efficiency across enterprise-level automation systems.
                 </p>
                 <TechList>
-                  <TechTag>Groovy</TechTag>
-                  <TechTag>Jira</TechTag>
-                  <TechTag>Scriptrunner</TechTag>
-                  <TechTag>Hardware Testing</TechTag>
+                  <TechTag>C#</TechTag>
+                  <TechTag>.NET</TechTag>
+                  <TechTag>SQL Server</TechTag>
+                  <TechTag>PowerShell</TechTag>
+                  <TechTag>Azure DevOps</TechTag>
+                  <TechTag>CI/CD</TechTag>
                 </TechList>
               </ExperienceItem>
             </Grid>
             
             <Grid>
               <DateRange>
+                <h3>Jun 2024 - Present</h3>
+                <p>Student Worker & Developer</p>
+              </DateRange>
+              <ExperienceItem>
+                <h3>Unicontrol, Odense</h3>
+                <p>
+                Handling warranty cases by testing and diagnosing returned hardware. 
+                Developing scripts to automate internal processes, improving efficiency across warranty, service, and order workflows. 
+                Contributing both technically and operationally to smoother day-to-day work for the team.
+                </p>
+                <TechList>
+                  <TechTag>Groovy</TechTag>
+                  <TechTag>Jira</TechTag>
+                  <TechTag>REST</TechTag>
+                  <TechTag>Python</TechTag>
+                  <TechTag>Hardware Testing</TechTag>
+                </TechList>
+              </ExperienceItem>
+            </Grid>
+
+            <Grid>
+              <DateRange>
                 <h3>Feb 2025 - July 2025</h3>
                 <p>Software Engineer Intern</p>
               </DateRange>
               <ExperienceItem>
-                <h3>ABB</h3>
+                <h3>ABB, Middelfart</h3>
                 <p>
-                  Working on real-world customer projects using C# .NET and SQL Server. Developing and maintaining 
-                  enterprise-level applications, focusing on backend development and database management. Collaborating 
-                  with experienced developers to deliver high-quality solutions for industrial automation systems.
+                Worked on real customer projects, developing and maintaining enterprise-level applications with a focus on backend development and database management. 
+                Collaborated with experienced engineers to deliver robust solutions for industrial automation environments.
                 </p>
                 <TechList>
                   <TechTag>C#</TechTag>
@@ -291,13 +313,27 @@ const IndexPage = () => {
                 <p>Guest Experience Leader</p>
               </DateRange>
               <ExperienceItem>
-                <h3>McDonald's</h3>
+                <h3>McDonald's, Gjesing</h3>
                 <p>
-                  Led customer service operations and developed strong 
-                  communication and leadership skills while ensuring high customer satisfaction.
+                Led customer service operations and trained new employees, ensuring high customer satisfaction. 
+                Developed strong communication, teamwork, and leadership skills in a fast-paced environment.
                 </p>
                 <TechList>
                   <TechTag>Customer Service</TechTag>
+                </TechList>
+              </ExperienceItem>
+            </Grid>
+
+            <Grid>
+              <DateRange>
+                <h3>May 2016 - May 2017</h3>
+                <p>Secretary assistant</p>
+              </DateRange>
+              <ExperienceItem>
+                <h3>Lægerne Nørregade, Esbjerg</h3>
+                <p>
+                Early part-time role assisting with basic administrative tasks, providing my first experience with responsibility, structure, and communication in a professional workplace.                </p>
+                <TechList>
                 </TechList>
               </ExperienceItem>
             </Grid>
