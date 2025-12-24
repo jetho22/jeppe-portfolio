@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
+import Snowfall from 'react-snowfall'
 
 const SidebarWrapper = styled.div`
   display: flex;
@@ -35,6 +36,7 @@ const ActiveIndicator = styled(motion.div)`
 const Sidebar = ({ sections, activeSection, onSectionClick }) => {
   return (
     <SidebarWrapper>
+      <Snowfall snowflakeCount={50}/>
       {sections.map((section) => (
         <NavItem
           key={section.id}

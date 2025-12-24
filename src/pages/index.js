@@ -5,6 +5,7 @@ import { useInView } from 'react-intersection-observer';
 import Layout from '../components/Layout';
 import GlobalStyles from '../styles/GlobalStyles';
 import { Helmet } from 'react-helmet';
+import Snowfall from 'react-snowfall'
 
 const Section = styled.section`
   display: flex;
@@ -197,6 +198,13 @@ const IndexPage = () => {
 
   return (
     <>
+      <Snowfall
+        style={{
+          position: 'fixed',
+          width: '100vw',
+          height: '100vh',
+        }}
+      />      
       <GlobalStyles />
       <Helmet>
         <title>Jeppe Thomsen</title>
